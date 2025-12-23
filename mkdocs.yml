@@ -1,7 +1,7 @@
 site_name: Graphica 
 site_description: The simplest Python GUI library - create beautiful desktop applications with minimal code
 site_author: Camila "Mocha" Rose
-site_url: https://yourusername.github.io/graphica
+site_url: https://github.com/mochacinno-dev/Graphica
 
 theme:
   name: material
@@ -72,8 +72,9 @@ nav:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/yourusername/graphica
+      link: https://github.com/mochacinno-dev/Graphica
     - icon: fontawesome/brands/python
       link: https://www.python.org
+
 
 copyright: Copyright &copy; 2024 Graphica
