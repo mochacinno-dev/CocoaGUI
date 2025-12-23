@@ -1,0 +1,79 @@
+site_name: Graphica 
+site_description: The simplest Python GUI library - create beautiful desktop applications with minimal code
+site_author: Camila "Mocha" Rose
+site_url: https://yourusername.github.io/graphica
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+plugins:
+  - search
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Installation: getting-started/installation.md
+    - Quick Start: getting-started/quickstart.md
+    - Your First App: getting-started/first-app.md
+  - API Reference:
+    - Window: api/window.md
+    - Button: api/button.md
+    - Label: api/label.md
+    - Input: api/input.md
+    - TextArea: api/textarea.md
+    - CheckBox: api/checkbox.md
+    - Utilities: api/utilities.md
+  - Examples:
+    - Calculator: examples/calculator.md
+    - Text Editor: examples/text-editor.md
+    - Todo App: examples/todo-app.md
+  - Guide:
+    - Layout & Positioning: guide/layout.md
+    - Event Handling: guide/events.md
+    - Best Practices: guide/best-practices.md
+  - About: about.md
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/yourusername/graphica
+    - icon: fontawesome/brands/python
+      link: https://www.python.org
+
+copyright: Copyright &copy; 2024 Graphica
