@@ -543,45 +543,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Installing CocoaGUI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#method-1-download-the-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Method 1: Download the File
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#method-2-clone-from-github" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Method 2: Clone from GitHub
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#method-3-direct-import-future" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Method 3: Direct Import (Future)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1353,45 +1314,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Installing CocoaGUI">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#method-1-download-the-file" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Method 1: Download the File
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#method-2-clone-from-github" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Method 2: Clone from GitHub
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#method-3-direct-import-future" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Method 3: Direct Import (Future)
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item">
@@ -1496,45 +1418,31 @@
 </code></pre></div>
 <p>If a small window appears, you're good to go! If not, see the troubleshooting section below.</p>
 <h2 id="installing-cocoagui">Installing CocoaGUI</h2>
-<h3 id="method-1-download-the-file">Method 1: Download the File</h3>
-<ol>
-<li>Download <code>CocoaGUI.py</code> from the <a href="https://github.com/yourusername/CocoaGUI">GitHub repository</a></li>
-<li>Place it in your project folder</li>
-<li>Import it: <code>import CocoaGUI as gui</code></li>
-</ol>
-<p>That's it! No pip install needed.</p>
-<h3 id="method-2-clone-from-github">Method 2: Clone from GitHub</h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/yourusername/CocoaGUI.git
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">cd</span><span class="w"> </span>CocoaGUI
-</code></pre></div>
-<p>Then copy <code>CocoaGUI.py</code> to your project directory.</p>
-<h3 id="method-3-direct-import-future">Method 3: Direct Import (Future)</h3>
-<p>Once published to PyPI, you'll be able to:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>CocoaGUI
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>pip<span class="w"> </span>install<span class="w"> </span>CocoaGUI
 </code></pre></div>
 <h2 id="verify-installation">Verify Installation</h2>
 <p>Create a test file <code>test.py</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">CocoaGUI</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gui</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-<a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">app</span> <span class="o">=</span> <span class="n">gui</span><span class="o">.</span><span class="n">Window</span><span class="p">(</span><span class="s2">&quot;Test&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">gui</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="s2">&quot;CocoaGUI works!&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">CocoaGUI</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">gui</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="n">app</span> <span class="o">=</span> <span class="n">gui</span><span class="o">.</span><span class="n">Window</span><span class="p">(</span><span class="s2">&quot;Test&quot;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="n">gui</span><span class="o">.</span><span class="n">Label</span><span class="p">(</span><span class="n">app</span><span class="p">,</span> <span class="s2">&quot;CocoaGUI works!&quot;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">80</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">app</span><span class="o">.</span><span class="n">run</span><span class="p">()</span>
 </code></pre></div>
 <p>Run it:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python<span class="w"> </span>test.py
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>python<span class="w"> </span>test.py
 </code></pre></div>
 <p>If a window appears with the text "CocoaGUI works!", you're all set! 🎉</p>
 <h2 id="troubleshooting">Troubleshooting</h2>
 <h3 id="tkinter-not-found-linux">tkinter Not Found (Linux)</h3>
 <p>On some Linux distributions, tkinter needs to be installed separately:</p>
 <p><strong>Ubuntu/Debian:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-tk
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>python3-tk
 </code></pre></div></p>
 <p><strong>Fedora:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>python3-tkinter
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>python3-tkinter
 </code></pre></div></p>
 <p><strong>Arch Linux:</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>tk
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>tk
 </code></pre></div></p>
 <h3 id="tkinter-not-found-macos">tkinter Not Found (macOS)</h3>
 <p>tkinter should come with Python on macOS. If it's missing, reinstall Python from <a href="https://www.python.org/downloads/">python.org</a>.</p>
