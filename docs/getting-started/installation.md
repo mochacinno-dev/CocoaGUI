@@ -18,28 +18,6 @@ python -m tkinter
 If a small window appears, you're good to go! If not, see the troubleshooting section below.
 
 ## Installing CocoaGUI
-
-### Method 1: Download the File
-
-1. Download `CocoaGUI.py` from the [GitHub repository](https://github.com/yourusername/CocoaGUI)
-2. Place it in your project folder
-3. Import it: `import CocoaGUI as gui`
-
-That's it! No pip install needed.
-
-### Method 2: Clone from GitHub
-
-```bash
-git clone https://github.com/yourusername/CocoaGUI.git
-cd CocoaGUI
-```
-
-Then copy `CocoaGUI.py` to your project directory.
-
-### Method 3: Direct Import (Future)
-
-Once published to PyPI, you'll be able to:
-
 ```bash
 pip install CocoaGUI
 ```
